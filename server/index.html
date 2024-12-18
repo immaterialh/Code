@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="base.css" />
+    </head>
+
+    <body>
+        <h1>Index.html</h1>
+
+        <button id="test">test</button>
+    </body>
+
+    <script>
+        test.onclick = () =>{
+            console.log("test click");
+            fetch("getKV", { headers:{ key:'record-22' } })
+            .then(response => response.text())
+            .then(t => console.log('response text', t));
+
+            fetch("getKV", { headers:{ key:'james' } })
+            .then(response => response.text())
+            .then(t => console.log('james response text', t));
+        };
+    </script>
+</html>

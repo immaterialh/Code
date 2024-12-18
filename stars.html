@@ -1,0 +1,37 @@
+<html>
+
+<style>
+
+input {
+	appearance: none;
+	background: url("star2.png") repeat-x;
+	width: 500px;
+	height: 40px;
+	border: 1px solid red;
+}
+input::div#thumb {
+	appearance: none;
+	color: red;
+	border: 12px solid green;
+	width: 10px;
+	margin-right: 0;
+	}
+input::-webkit-slider-thumb {
+	appearance: none;
+	color: red;
+	border: 12px solid green;
+	width: 10px;
+	margin-right: 0;
+}
+input::-webkit-slider-runnable-track {
+	border: 12px solid orange;
+}
+input::-moz-range-thumb {}
+input::-ms-thumb {}
+
+</style>
+
+<p>work in progress ...</p>
+<input type="range" max=5 />
+
+</html>
